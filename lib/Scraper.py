@@ -9,10 +9,10 @@ class Scraper:
         self.courses = []
 
     def get_page(self):
-        # more code coming soon!
+        
         doc = BeautifulSoup(requests.get(
             "http://learn-co-curriculum.github.io/site-for-scraping/courses").text, 'html.parser')
-        # ipdb.set_trace()
+        
         return doc
 
     def get_courses(self):
